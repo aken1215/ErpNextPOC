@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpNextPoc", "ErpNextPoc\ErpNextPoc.csproj", "{7CDB84E1-2CE2-4729-8B1E-61F40DCDB16B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel\ViewModel.csproj", "{CF191AF8-7BEE-462F-99F3-983A6381841B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7CDB84E1-2CE2-4729-8B1E-61F40DCDB16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CDB84E1-2CE2-4729-8B1E-61F40DCDB16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CDB84E1-2CE2-4729-8B1E-61F40DCDB16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF191AF8-7BEE-462F-99F3-983A6381841B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF191AF8-7BEE-462F-99F3-983A6381841B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF191AF8-7BEE-462F-99F3-983A6381841B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF191AF8-7BEE-462F-99F3-983A6381841B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
