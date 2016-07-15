@@ -37,7 +37,8 @@
                 controller: 'MemberController',
                 controllerAs: 'MemberCtrl',
                 resolve: {
-                    Member: GetMemberData
+                    Member: function () {
+                        return { value: 'simple!' };
                 }
             });
 
