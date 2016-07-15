@@ -26,6 +26,22 @@ namespace ErpNextPoc
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                  //// Root
+                  "~/TypeScripts/app.js",
+                  //// Config
+                  "~/TypeScripts/Configs/config.js",
+                  "~/TypeScripts/Configs/route.config.js",
+                  //// Components
+                  //// Service
+                  "~/TypeScripts/Services/member.service.js",
+                  //// Controller/Member
+                  "~/TypeScripts/Controllers/memberLogin/member.controller.js",
+                  "~/TypeScripts/Controllers/memberLogin/member.route.js"
+                  ));
+
         }
     }
 }

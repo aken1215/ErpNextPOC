@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpNextPoc", "ErpNextPoc\Er
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel\ViewModel.csproj", "{CF191AF8-7BEE-462F-99F3-983A6381841B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpNextAdApi", "ErpNextAdApi\ErpNextAdApi.csproj", "{08FE4AB9-CE83-40F1-B62E-BAB5344FB8AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CF191AF8-7BEE-462F-99F3-983A6381841B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF191AF8-7BEE-462F-99F3-983A6381841B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF191AF8-7BEE-462F-99F3-983A6381841B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FE4AB9-CE83-40F1-B62E-BAB5344FB8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FE4AB9-CE83-40F1-B62E-BAB5344FB8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FE4AB9-CE83-40F1-B62E-BAB5344FB8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FE4AB9-CE83-40F1-B62E-BAB5344FB8AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

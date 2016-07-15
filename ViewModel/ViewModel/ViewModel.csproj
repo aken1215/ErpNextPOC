@@ -7,8 +7,8 @@
     <ProjectGuid>{CF191AF8-7BEE-462F-99F3-983A6381841B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ViewModel</RootNamespace>
-    <AssemblyName>ViewModel</AssemblyName>
+    <RootNamespace>Aurora.ErpNext.ViewModel</RootNamespace>
+    <AssemblyName>Aurora.ErpNext.ViewModel</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MemberViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
