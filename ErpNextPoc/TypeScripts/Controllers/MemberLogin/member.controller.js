@@ -6,12 +6,13 @@ var Aurora;
         (function (Controllers) {
             var MemberController = (function () {
                 function MemberController($log, member) {
-                    console.log(member);
+                    this.member = member;
+                    console.log(this);
                 }
                 MemberController.prototype.Submit = function () {
                     console.log('test');
                 };
-                MemberController.$inject = ['$log', 'Member'];
+                MemberController.$inject = ['$log', 'Member', '$scope'];
                 return MemberController;
             }());
             Controllers.MemberController = MemberController;

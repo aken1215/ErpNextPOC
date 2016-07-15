@@ -22,25 +22,36 @@
             {
                 abstract:true,
                 url: '/member',
-                template: 'asas <div  ui-view></div>',
+                templateUrl: 'TypeScripts/Controllers/MemberLogin/member.base.html',
                 controller: 'BaseController',
                 controllerAs: 'BaseCtrl',
                 resolve: {
-
+                  
                 }
             })
             .state('member.new',
             {
                 url: '/new',  
                 parent:'member',
-                template: '<h1>asdsa{{ MemberCtrl.member.Id }}</h1>',
+                templateUrl: 'TypeScripts/Controllers/MemberLogin/member.html',
                 controller: 'MemberController',
                 controllerAs: 'MemberCtrl',
                 resolve: {
-                    Member: function () {
-                        return { value: 'simple!' };
+                    Member: GetMemberData
                 }
-            });
+            })
+            .
+            state('member.new.old',
+            {
+                url: '/old',
+                parent: 'member.new',
+                template: '<div>memberOld</div>',
+                controller: 'MemberController',
+                controllerAs: 'MemberOldCtrl',
+                resolve: {
+                    Member: GetMemberData
+                }
+            })
 
 
     }

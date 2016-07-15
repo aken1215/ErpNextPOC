@@ -12,7 +12,8 @@
 
 <# var ts = TypeScript.Definitions()
 		.WithReference("Enums.ts")
-		.For<Aurora.ErpNext.ViewModel.MemberViewModel>();
+		.For<Aurora.ErpNext.ViewModel.MemberViewModel>()
+		.For<Aurora.ErpNext.ViewModel.AccountViewModel>();
 #>
 
 <#= ts.Generate(TsGeneratorOutput.Properties) #>

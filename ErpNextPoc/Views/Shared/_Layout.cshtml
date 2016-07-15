@@ -9,14 +9,11 @@
 
 </head>
 <body>
-     @RenderBody()
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/angular.min.js"></script>
-    <script src="~/Scripts/angular-route.min.js"></script>
-    <script src="~/Scripts/AngularUI/ui-router.min.js"></script>
+    @RenderBody()
+   
+    @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/app")
 
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>

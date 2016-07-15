@@ -1,12 +1,13 @@
 ﻿module Aurora.ErpNext.Controllers {
     export class MemberController {
-        static $inject = ['$log', 'Member'];
-
+        static $inject = ['$log', 'Member','$scope'];
         constructor(
              $log: ng.ILogService,
-              member: Aurora.ErpNext.ViewModel.MemberViewModel
+           public member: Aurora.ErpNext.ViewModel.MemberViewModel
+
         ) {
-            console.log(member);
+
+            console.log(this);
         }
 
         Submit(): void {

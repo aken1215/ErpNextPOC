@@ -12,6 +12,7 @@ var Aurora;
             'Aurora.ErpNext.Configs'
         ]);
         angular.module('Aurora.ErpNext.Configs', []);
+        angular.module('Aurora.ErpNext.Components', []);
         angular.module('Aurora.ErpNext.Controllers', ['Aurora.ErpNext.Services']);
         angular.module('Aurora.ErpNext.Services', []);
     })(ErpNext = Aurora.ErpNext || (Aurora.ErpNext = {}));

@@ -7,7 +7,7 @@ var Aurora;
             var ConfigProvider = (function () {
                 function ConfigProvider() {
                     this.config = {
-                        ErpNextHrApiRoot: 'http://localhost/ErpNextPocApi/api/',
+                        ErpNextHrApiRoot: 'http://localhost/sampleapi/api',
                     };
                 }
                 ConfigProvider.prototype.setConfig = function (value) {

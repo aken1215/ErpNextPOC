@@ -27,6 +27,11 @@ namespace ErpNextPoc
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                     "~/Scripts/angular.js",
+                     "~/Scripts/angular-sanitize.js",
+                     "~/Scripts/angular-ui-router.js"
+                     ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                   //// Root
@@ -35,6 +40,8 @@ namespace ErpNextPoc
                   "~/TypeScripts/Configs/config.js",
                   "~/TypeScripts/Configs/route.config.js",
                   //// Components
+                  "~/TypeScripts/Components/approve.controller.js",
+
                   //// Service
                   "~/TypeScripts/Services/member.service.js",
                   //// Controller/Member

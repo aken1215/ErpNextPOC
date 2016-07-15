@@ -1,7 +1,7 @@
 ﻿module Aurora.ErpNext.Configs {
     export class ConfigProvider implements ng.IServiceProvider {
         config: IConfig = {
-            ErpNextHrApiRoot: 'http://localhost/ErpNextPocApi/api/',
+            ErpNextHrApiRoot: 'http://localhost/sampleapi/api',
         }
 
         setConfig(value: IConfig) {

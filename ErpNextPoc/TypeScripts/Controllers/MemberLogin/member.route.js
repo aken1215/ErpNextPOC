@@ -19,18 +19,27 @@ var Aurora;
                     abstract: true,
                     url: '/member',
                     templateUrl: 'TypeScripts/Controllers/MemberLogin/member.base.html',
+                    controller: 'BaseController',
+                    controllerAs: 'BaseCtrl',
+                    resolve: {}
+                })
+                    .state('member.new', {
+                    url: '/new',
+                    parent: 'member',
+                    templateUrl: 'TypeScripts/Controllers/MemberLogin/member.html',
                     controller: 'MemberController',
                     controllerAs: 'MemberCtrl',
                     resolve: {
                         Member: GetMemberData
                     }
                 })
-                    .state('member.new', {
-                    url: '/new',
-                    parent: 'member',
-                    template: '<h1>asdsa{{MemberCtrl.member}}</h1>',
+                    .
+                        state('member.new.old', {
+                    url: '/old',
+                    parent: 'member.new',
+                    template: '<div>memberOld</div>',
                     controller: 'MemberController',
-                    controllerAs: 'MemberCtrl',
+                    controllerAs: 'MemberOldCtrl',
                     resolve: {
                         Member: GetMemberData
                     }
