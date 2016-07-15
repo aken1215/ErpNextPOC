@@ -39,6 +39,7 @@ namespace ErpNextPoc
                   "~/TypeScripts/Services/member.service.js",
                   //// Controller/Member
                   "~/TypeScripts/Controllers/memberLogin/member.controller.js",
+                  "~/TypeScripts/Base/base.controller.js",
                   "~/TypeScripts/Controllers/memberLogin/member.route.js"
                   ));
 

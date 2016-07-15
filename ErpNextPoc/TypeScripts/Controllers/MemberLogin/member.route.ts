@@ -22,18 +22,18 @@
             {
                 abstract:true,
                 url: '/member',
-                templateUrl: 'TypeScripts/Controllers/MemberLogin/member.base.html',
-                controller: 'MemberController',
-                controllerAs: 'MemberCtrl',
+                template: 'asas <div  ui-view></div>',
+                controller: 'BaseController',
+                controllerAs: 'BaseCtrl',
                 resolve: {
-                    Member: GetMemberData
+
                 }
             })
             .state('member.new',
             {
                 url: '/new',  
                 parent:'member',
-                template: '<h1>asdsa{{MemberCtrl.member}}</h1>',
+                template: '<h1>asdsa{{ MemberCtrl.member.Id }}</h1>',
                 controller: 'MemberController',
                 controllerAs: 'MemberCtrl',
                 resolve: {

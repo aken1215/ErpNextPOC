@@ -243,3 +243,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/ErpNextPoc/TypeScripts/Base/base.controller.js.map
+/ErpNextPoc/TypeScripts/Base/base.controller.js

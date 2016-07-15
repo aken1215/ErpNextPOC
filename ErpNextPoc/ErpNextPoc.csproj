@@ -1106,6 +1106,7 @@
     <TypeScriptCompile Include="TypeScripts\app.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="TypeScripts\Base\base.controller.ts" />
     <TypeScriptCompile Include="TypeScripts\Configs\config.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
