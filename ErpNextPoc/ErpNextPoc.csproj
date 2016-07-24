@@ -270,6 +270,7 @@
     <Content Include="TypeScripts\Components\approve.html" />
     <Content Include="TypeScripts\Controllers\MemberLogin\member.base.html" />
     <Content Include="TypeScripts\Controllers\MemberLogin\member.html" />
+    <Content Include="TypeScripts\Controllers\資訊服務單\infoSupport.edit.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -356,15 +357,15 @@
     <TypeScriptCompile Include="TypeScripts\Configs\iconfig.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="TypeScripts\Configs\route.config.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
+    <TypeScriptCompile Include="TypeScripts\Configs\route.config.ts" />
     <TypeScriptCompile Include="TypeScripts\Controllers\MemberLogin\member.controller.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="TypeScripts\Controllers\MemberLogin\member.route.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="TypeScripts\Controllers\資訊服務單\InfoSupport.edit.controller.ts" />
+    <TypeScriptCompile Include="TypeScripts\Controllers\資訊服務單\infoSupport.route.ts" />
     <TypeScriptCompile Include="TypeScripts\Services\member.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
@@ -394,7 +395,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56326</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
