@@ -36,7 +36,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentTestCase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentTestCase.0.1.2\lib\net45\FluentTestCase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.53.1\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.53.1\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,13 +73,137 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Controllers\HomeControllerTests.cs" />
+    <Compile Include="Controllers\InfoSupportControllerTest.cs" />
+    <Compile Include="InfoSupports\審核功能_提案人主管.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>審核功能_提案人主管.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\審核功能_資訊主管.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>審核功能_資訊主管.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\接單功能_資訊人員.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>接單功能_資訊人員.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\審核功能_資訊長.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>審核功能_資訊長.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\審核功能_事業部總經理.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>審核功能_事業部總經理.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\審核功能_事業部總經理Steps.cs" />
+    <Compile Include="InfoSupports\建單功能_提案人.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>建單功能_提案人.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\建單功能_提案人Steps.cs" />
+    <Compile Include="InfoSupports\會簽功能_事業部總經理.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>會簽功能_事業部總經理.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\查詢進度_提案人.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>查詢進度_提案人.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\查詢進度_提案人Steps.cs" />
+    <Compile Include="InfoSupports\模組派工_資訊組秘書.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>模組派工_資訊組秘書.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\派工功能_資訊主管.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>派工功能_資訊主管.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\申請驗收_資訊人員.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>申請驗收_資訊人員.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSupports\申請驗收_資訊人員Steps.cs" />
+    <Compile Include="InfoSupports\結案功能_提案人Steps.cs" />
+    <Compile Include="InfoSupports\結案功能_提案人.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>結案功能_提案人.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InfoSupports\審核功能_資訊長Steps.cs" />
+    <Compile Include="InfoSupports\接單功能_資訊人員Steps.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ErpNextPoc\ErpNextPoc.csproj">
       <Project>{7CDB84E1-2CE2-4729-8B1E-61F40DCDB16B}</Project>
       <Name>ErpNextPoc</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel\ViewModel.csproj">
+      <Project>{CF191AF8-7BEE-462F-99F3-983A6381841B}</Project>
+      <Name>ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="InfoSupports\審核功能_提案人主管.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>審核功能_提案人主管.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\審核功能_資訊主管.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>審核功能_資訊主管.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\接單功能_資訊人員.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>接單功能_資訊人員.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\審核功能_資訊長.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>審核功能_資訊長.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\審核功能_事業部總經理.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>審核功能_事業部總經理.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\建單功能_提案人.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>建單功能_提案人.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\會簽功能_事業部總經理.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>會簽功能_事業部總經理.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\查詢進度_提案人.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>查詢進度_提案人.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\模組派工_資訊組秘書.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>模組派工_資訊組秘書.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\派工功能_資訊主管.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>派工功能_資訊主管.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\申請驗收_資訊人員.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>申請驗收_資訊人員.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InfoSupports\結案功能_提案人.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>結案功能_提案人.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
