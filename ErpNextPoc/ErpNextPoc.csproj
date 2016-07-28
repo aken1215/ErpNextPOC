@@ -227,6 +227,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Services\InfoSupport\IInfoSupportService.cs" />
+    <Compile Include="Services\InfoSupport\InfoSupportService.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -270,6 +272,7 @@
     <Content Include="TypeScripts\Components\approve.html" />
     <Content Include="TypeScripts\Controllers\MemberLogin\member.base.html" />
     <Content Include="TypeScripts\Controllers\MemberLogin\member.html" />
+    <Content Include="TypeScripts\Controllers\資訊服務單\infoSupport.detail.html" />
     <Content Include="TypeScripts\Controllers\資訊服務單\infoSupport.edit.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -364,6 +367,7 @@
     <TypeScriptCompile Include="TypeScripts\Controllers\MemberLogin\member.route.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="TypeScripts\Controllers\資訊服務單\infoSupport.detail.controller.ts" />
     <TypeScriptCompile Include="TypeScripts\Controllers\資訊服務單\InfoSupport.edit.controller.ts" />
     <TypeScriptCompile Include="TypeScripts\Controllers\資訊服務單\infoSupport.route.ts" />
     <TypeScriptCompile Include="TypeScripts\Services\member.service.ts">

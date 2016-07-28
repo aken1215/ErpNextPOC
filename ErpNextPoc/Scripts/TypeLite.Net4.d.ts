@@ -11,6 +11,13 @@ declare module Aurora.ErpNext.ViewModel {
 		Id: System.Guid;
 		Test: string;
 	}
+	interface InfoSupportEditViewModel {
+		Attachments: string[];
+		Context: string;
+		ManagerEMPNO: string;
+		ManagerName: string;
+		Title: string;
+	}
 	interface MemberViewModel {
 		Id: System.Guid;
 		Test: string;

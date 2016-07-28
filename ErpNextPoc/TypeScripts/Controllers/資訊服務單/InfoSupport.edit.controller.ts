@@ -1,20 +1,36 @@
 ﻿module Aurora.ErpNext.Controllers {
-    export class InfoSupportController {
-        static $inject = ['$log', 'InfoSupport', '$scope'];
+    export class InfoSupportEditController {
+        static $inject = ['$log','$state','InfoSupport'];
+
+        InfoSupports:ViewModel.InfoSupportEditViewModel[];
+
         constructor(
             $log: ng.ILogService,
-            public member: Aurora.ErpNext.ViewModel.MemberViewModel
+            protected $state: ng.ui.IStateService,
+            public infoSupport: Aurora.ErpNext.ViewModel.InfoSupportEditViewModel
 
         ) {
-
-            console.log(this);
+            this.InfoSupports = [];
+            this.InfoSupports.push(infoSupport);
         }
 
         Submit(): void {
-            console.log('test');
+            let infoSupport: ViewModel.InfoSupportEditViewModel = {
+                Title: "",
+                Context: "",
+                ManagerEMPNO: "",
+                ManagerName: "",
+                Attachments:["",""]
+            }
+            this.InfoSupports.push(infoSupport);
+
+            this.$state.go('detail', {
+                Id: "test",
+                Name:"Hank"
+            });
         }
     }
 
     angular.module('Aurora.ErpNext.Controllers')
-        .controller('InfoSupportController', InfoSupportController);
+        .controller('InfoSupportEditController', InfoSupportEditController);
 }

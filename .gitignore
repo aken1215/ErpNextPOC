@@ -251,3 +251,6 @@ ModelManifest.xml
 /ErpNextPoc/TypeScripts/Controllers/資訊服務單/InfoSupport.edit.controller.js
 /ErpNextPoc/TypeScripts/Controllers/route.config.js.map
 /ErpNextPoc/TypeScripts/Controllers/route.config.js
+/ErpNextPoc/TypeScripts/Controllers/資訊服務單/infoSupport.detail.controller.ts
+/ErpNextPoc/TypeScripts/Controllers/資訊服務單/infoSupport.detail.controller.js.map
+/ErpNextPoc/TypeScripts/Controllers/資訊服務單/infoSupport.detail.controller.js

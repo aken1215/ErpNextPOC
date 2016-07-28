@@ -47,7 +47,12 @@ namespace ErpNextPoc
                   //// Controller/Member
                   "~/TypeScripts/Controllers/memberLogin/member.controller.js",
                   "~/TypeScripts/Base/base.controller.js",
-                  "~/TypeScripts/Controllers/memberLogin/member.route.js"
+                  "~/TypeScripts/Controllers/memberLogin/member.route.js",
+
+                  //InfoSupport
+                    "~/TypeScripts/Controllers/資訊服務單/infoSupport.edit.controller.js",
+                    "~/TypeScripts/Controllers/資訊服務單/infoSupport.detail.controller.js",
+                    "~/TypeScripts/Controllers/資訊服務單/infoSupport.route.js"
                   ));
 
         }

@@ -14,6 +14,8 @@ namespace Aurora.ErpNext.ViewModel
 
         public string ManagerEMPNO { get; set; }
 
+        public string ManagerName { get; set; }
+
         public ICollection<string> Attachments { get; set; }
     }
 }
