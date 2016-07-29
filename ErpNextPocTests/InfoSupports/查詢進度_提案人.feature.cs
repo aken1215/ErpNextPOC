@@ -67,82 +67,696 @@ namespace ErpNextPocTests.InfoSupports
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void 依據所輸入的查詢條件查詢資料(string beginDocno, string endDocno, string dpt, string state, string beginDocdate, string endDocdate, string beginEST_Cmplt_Date, string endEST_Cmplt_Date, string approve_State, string approveMyself, string noFinsh, string[] exampleTags)
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("查詢申請日期起訖日")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "查詢進度_提案人")]
+        public virtual void 查詢申請日期起訖日()
         {
-            string[] @__tags = new string[] {
-                    "mytag",
-                    "目前條件共有:單號區間、模組(下拉)、申請事業部(下拉)、申請部門(下拉)、單據狀態(勾選-可複選)、",
-                    "申請日期區間、核準日期區間、實際完成日日期區間、預計完成日日期區間、驗收日期區間、發票日期區間、",
-                    "簽核狀態(勾選-可複選)、簽核(勾選)、未結案月份(勾選-單選)、資訊組主管是否已會簽申請(下拉)",
-                    "共22個條件",
-                    "提案人需用到的條件",
-                    "單號區間、申請部門、單據狀態(勾選)、申請日期區間、預計完成日區間、簽核狀態(勾選)、簽核(勾選)、未結案狀態(選取)",
-                    "使用outline方式查詢"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("依據所輸入的查詢條件查詢資料", @__tags);
-#line 17
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢申請日期起訖日", ((string[])(null)));
+#line 6
 this.ScenarioSetup(scenarioInfo);
-#line 18
- testRunner.Given(string.Format("單號區間(起)條件輸入{0}", beginDocno), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 19
- testRunner.And(string.Format("單號區間(迄)條件輸入{0}", endDocno), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 20
- testRunner.And(string.Format("申請部門條件選取{0}", dpt), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 21
- testRunner.And(string.Format("單據狀態條件勾選{0}", state), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
- testRunner.And(string.Format("申請日期區間(起日)條件輸入{0}", beginDocdate), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 23
- testRunner.And(string.Format("申請日期區間(迄日)條件輸入{0}", endDocdate), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
- testRunner.And(string.Format("預計完成日日期區間(起日)條件輸入{0}", beginEST_Cmplt_Date), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 25
- testRunner.And(string.Format("預計完成日日期區間(迄日)條件輸入{0}", endEST_Cmplt_Date), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
- testRunner.And(string.Format("簽核狀態條件勾選{0}", approve_State), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 27
- testRunner.And(string.Format("簽核條件勾選{0}", approveMyself), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
- testRunner.And(string.Format("未結案狀態條件選取{0}", noFinsh), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 29
- testRunner.When("按下查詢按鈕", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 30
- testRunner.Then("\"有正確收到查詢條件\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table1.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table1.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table1.AddRow(new string[] {
+                        "2016070003",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table1.AddRow(new string[] {
+                        "2016070004",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 7
+ testRunner.Given("資料庫有服務單", ((string)(null)), table1, "Given ");
+#line 13
+ testRunner.When("申請日期區間(起日)條件輸入\"2016070001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
+ testRunner.And("申請日期區間(迄日)條件輸入\"2016070002\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
+ testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table2.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table2.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 16
+ testRunner.Then("搜尋結果為", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("依據所輸入的查詢條件查詢資料: 2016070001")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("查詢預計完成日日期起訖日")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "查詢進度_提案人")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("目前條件共有:單號區間、模組(下拉)、申請事業部(下拉)、申請部門(下拉)、單據狀態(勾選-可複選)、")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("申請日期區間、核準日期區間、實際完成日日期區間、預計完成日日期區間、驗收日期區間、發票日期區間、")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("簽核狀態(勾選-可複選)、簽核(勾選)、未結案月份(勾選-單選)、資訊組主管是否已會簽申請(下拉)")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("共22個條件")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("提案人需用到的條件")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("單號區間、申請部門、單據狀態(勾選)、申請日期區間、預計完成日區間、簽核狀態(勾選)、簽核(勾選)、未結案狀態(選取)")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("使用outline方式查詢")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("ExampleSetName", "單一查詢條件")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "2016070001")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BeginDocno", "2016070001")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:EndDocno", "2016070099")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Dpt", "VR11")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:State", "3")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BeginDocdate", "20160701")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:EndDocdate", "20160731")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BeginEST_cmplt_Date", "20160701")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:EndEST_cmplt_Date", "20160731")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Approve_state", "3")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:ApproveMyself", "true")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:NoFinsh", "3")]
-        public virtual void 依據所輸入的查詢條件查詢資料_單一查詢條件_2016070001()
+        public virtual void 查詢預計完成日日期起訖日()
         {
-            this.依據所輸入的查詢條件查詢資料("2016070001", "2016070099", "VR11", "3", "20160701", "20160731", "20160701", "20160731", "3", "true", "3", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢預計完成日日期起訖日", ((string[])(null)));
+#line 21
+this.ScenarioSetup(scenarioInfo);
 #line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table3.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table3.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table3.AddRow(new string[] {
+                        "2016070003",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table3.AddRow(new string[] {
+                        "2016070004",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 22
+ testRunner.Given("資料庫有服務單", ((string)(null)), table3, "Given ");
+#line 28
+ testRunner.When("預計完成日日期區間(起日)條件輸入\"2016070001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 29
+ testRunner.And("預計完成日日期區間(迄日)條件輸入\"2016070002\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 30
+ testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table4.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table4.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 31
+ testRunner.Then("搜尋結果為", ((string)(null)), table4, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("查詢單號區間(迄)起訖")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "查詢進度_提案人")]
+        public virtual void 查詢單號區間迄起訖()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢單號區間(迄)起訖", ((string[])(null)));
+#line 36
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table5.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table5.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table5.AddRow(new string[] {
+                        "2016070003",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table5.AddRow(new string[] {
+                        "2016070004",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 37
+ testRunner.Given("資料庫有服務單", ((string)(null)), table5, "Given ");
+#line 43
+ testRunner.When("單號區間條件輸入\"2016070001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 44
+ testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table6.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table6.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 45
+ testRunner.Then("搜尋結果為", ((string)(null)), table6, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("查詢單據狀態")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "查詢進度_提案人")]
+        public virtual void 查詢單據狀態()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢單據狀態", ((string[])(null)));
+#line 51
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table7.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table7.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table7.AddRow(new string[] {
+                        "2016070003",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table7.AddRow(new string[] {
+                        "2016070004",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 52
+ testRunner.Given("資料庫有服務單", ((string)(null)), table7, "Given ");
+#line 58
+ testRunner.When("單據狀態條件勾選3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 59
+ testRunner.And("簽核狀態條件勾選3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 60
+ testRunner.And("未結案狀態條件選取3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 61
+ testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table8.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 62
+ testRunner.Then("搜尋結果為", ((string)(null)), table8, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("查詢自身簽核單據")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "查詢進度_提案人")]
+        public virtual void 查詢自身簽核單據()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢自身簽核單據", ((string[])(null)));
+#line 66
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table9.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "false",
+                        "3"});
+            table9.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "false",
+                        "3"});
+            table9.AddRow(new string[] {
+                        "2016070003",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "false",
+                        "3"});
+            table9.AddRow(new string[] {
+                        "2016070004",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 67
+ testRunner.Given("資料庫有服務單", ((string)(null)), table9, "Given ");
+#line 73
+ testRunner.When("簽核條件勾選\"true\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 74
+ testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table10.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 75
+ testRunner.Then("搜尋結果為", ((string)(null)), table10, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("查詢單據部門")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "查詢進度_提案人")]
+        public virtual void 查詢單據部門()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢單據部門", ((string[])(null)));
+#line 79
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table11.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table11.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table11.AddRow(new string[] {
+                        "2016070003",
+                        "2016070099",
+                        "VR12",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table11.AddRow(new string[] {
+                        "2016070004",
+                        "2016070099",
+                        "VR12",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 80
+ testRunner.Given("資料庫有服務單", ((string)(null)), table11, "Given ");
+#line 86
+ testRunner.When("申請部門條件選取\"VR11\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 87
+ testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                        "BeginDocno",
+                        "EndDocno",
+                        "Dpt",
+                        "State",
+                        "BeginDocdate",
+                        "EndDocdate",
+                        "BeginEST_cmplt_Date",
+                        "EndEST_cmplt_Date",
+                        "Approve_state",
+                        "ApproveMyself",
+                        "NoFinsh"});
+            table12.AddRow(new string[] {
+                        "2016070001",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+            table12.AddRow(new string[] {
+                        "2016070002",
+                        "2016070099",
+                        "VR11",
+                        "3",
+                        "20160701",
+                        "20160731",
+                        "20160701",
+                        "20160731",
+                        "3",
+                        "true",
+                        "3"});
+#line 88
+ testRunner.Then("搜尋結果為", ((string)(null)), table12, "Then ");
+#line hidden
+            this.ScenarioCleanup();
         }
     }
 }

@@ -67,132 +67,64 @@ namespace ErpNextPocTests.InfoSupports
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void 各事業部總經理會簽(string rEMARK, string[] exampleTags)
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("會簽人員均同意")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "會簽功能_事業部總經理")]
+        public virtual void 會簽人員均同意()
         {
-            string[] @__tags = new string[] {
-                    "各事業部總經理會簽"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("各事業部總經理會簽", @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("會簽人員均同意", ((string[])(null)));
+#line 6
+this.ScenarioSetup(scenarioInfo);
 #line 7
-this.ScenarioSetup(scenarioInfo);
+ testRunner.Given("資料庫有服務單\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.Given("我有服務單單號\"2016070001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.And("服務單的狀態為 \"會簽中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.And("服務單需求標題為\"ERP系統改善\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("會簽人包含\"震旦總經理\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.And("服務單需求說明為\"客服系統希望能新增功能\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("會簽人包含\"互盛總經理\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11
- testRunner.And("服務單服務項目\"ERP系統開發\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("會簽人包含\"資訊長\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.And("服務單的狀態為\"XXX\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("\"震旦總經理\"同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
- testRunner.When("收到會簽通知", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("\"互盛總經理\"同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 14
- testRunner.And(string.Format("填寫會簽意見說明{0}", rEMARK), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("\"資訊長\"同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
- testRunner.And("事業部總經理會簽核准", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 16
- testRunner.Then("服務單的狀態為\"A事業部總經理會簽完成\"狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("服務單的狀態為\"資訊主管審核中\"狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("各事業部總經理會簽: 同意開發")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("會簽人員有人發動否決權")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "會簽功能_事業部總經理")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("各事業部總經理會簽")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "同意開發")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:REMARK", "同意開發")]
-        public virtual void 各事業部總經理會簽_同意開發()
+        public virtual void 會簽人員有人發動否決權()
         {
-            this.各事業部總經理會簽("同意開發", ((string[])(null)));
-#line hidden
-        }
-        
-        public virtual void 資訊長會簽同意(string rEMARK, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "資訊長會簽"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("資訊長會簽同意", @__tags);
-#line 22
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("會簽人員有人發動否決權", ((string[])(null)));
+#line 17
 this.ScenarioSetup(scenarioInfo);
+#line 18
+ testRunner.Given("資料庫有服務單\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 19
+ testRunner.And("服務單的狀態為 \"會簽中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 20
+ testRunner.And("會簽人包含\"震旦總經理\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 21
+ testRunner.And("會簽人包含\"互盛總經理\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 22
+ testRunner.And("會簽人包含\"資訊長\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 23
- testRunner.Given("我有服務單單號\"2016070001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("\"震旦總經理\"同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 24
- testRunner.And("服務單需求標題為\"ERP系統改善\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("\"互盛總經理\"同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 25
- testRunner.And("服務單需求說明為\"客服系統希望能新增功能\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("\"資訊長\"不同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 26
- testRunner.And("服務單服務項目\"ERP系統開發\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 27
- testRunner.And("服務單的狀態為\"事業部總經理會簽完成\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
- testRunner.When("收到會簽通知", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 29
- testRunner.And(string.Format("填寫會簽意見說明{0}", rEMARK), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 30
- testRunner.And("資訊長會簽核准", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 31
- testRunner.Then("服務單的狀態為\"資訊長會簽核准\"狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("服務單的狀態為\"申請駁回\"狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("資訊長會簽同意: 同意開發")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "會簽功能_事業部總經理")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("資訊長會簽")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "同意開發")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:REMARK", "同意開發")]
-        public virtual void 資訊長會簽同意_同意開發()
-        {
-            this.資訊長會簽同意("同意開發", ((string[])(null)));
-#line hidden
-        }
-        
-        public virtual void 資訊長會簽不同意(string rEMARK, string[] exampleTags)
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("資訊長會簽不同意", exampleTags);
-#line 36
- this.ScenarioSetup(scenarioInfo);
-#line 37
- testRunner.Given("我有服務單單號\"2016070001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 38
- testRunner.And("服務單需求標題為\"ERP系統改善\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 39
- testRunner.And("服務單需求說明為\"客服系統希望能新增功能\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 40
- testRunner.And("服務單服務項目\"ERP系統開發\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 41
- testRunner.And("服務單的狀態為\"事業部總經理會簽完成\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 42
- testRunner.When("收到會簽通知", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 43
- testRunner.And(string.Format("填寫會簽意見說明{0}", rEMARK), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 44
- testRunner.And("資訊長會簽不核准", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 45
- testRunner.Then("服務單的狀態為\"資訊長會簽不核准\"狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("資訊長會簽不同意: 此需求無意義")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "會簽功能_事業部總經理")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "此需求無意義")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:REMARK", "此需求無意義")]
-        public virtual void 資訊長會簽不同意_此需求無意義()
-        {
-            this.資訊長會簽不同意("此需求無意義", ((string[])(null)));
-#line hidden
         }
     }
 }

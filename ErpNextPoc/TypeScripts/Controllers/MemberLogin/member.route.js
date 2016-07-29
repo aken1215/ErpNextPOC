@@ -51,3 +51,4 @@ var Aurora;
         })(Controllers = ErpNext.Controllers || (ErpNext.Controllers = {}));
     })(ErpNext = Aurora.ErpNext || (Aurora.ErpNext = {}));
 })(Aurora || (Aurora = {}));
+//# sourceMappingURL=member.route.js.map

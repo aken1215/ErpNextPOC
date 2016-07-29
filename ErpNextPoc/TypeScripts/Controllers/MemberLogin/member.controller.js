@@ -21,3 +21,4 @@ var Aurora;
         })(Controllers = ErpNext.Controllers || (ErpNext.Controllers = {}));
     })(ErpNext = Aurora.ErpNext || (Aurora.ErpNext = {}));
 })(Aurora || (Aurora = {}));
+//# sourceMappingURL=member.controller.js.map

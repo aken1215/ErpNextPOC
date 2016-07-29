@@ -76,28 +76,15 @@ namespace ErpNextPocTests.InfoSupports
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("服務單的單號為 \"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("資料庫有服務單\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.And("需求標題為 \"ERP系統改善\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("服務單的狀態為 \"模組派工中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.And("需求說明為 \"客服系統希望能新增功能\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "buBoss"});
-            table1.AddRow(new string[] {
-                        "資訊長"});
-            table1.AddRow(new string[] {
-                        "OA總經理"});
-            table1.AddRow(new string[] {
-                        "互盛總經理"});
-            table1.AddRow(new string[] {
-                        "金儀總經理"});
+ testRunner.When("選擇派工模組\"SM\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.And("<buBoss> 會簽同意", ((string)(null)), table1, "And ");
-#line 16
- testRunner.When("派工模組選擇 \"SM\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 17
- testRunner.Then("顯示派工模組為 \"SM\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("派工", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+ testRunner.Then("服務單的狀態為\"資訊主管審核中\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
