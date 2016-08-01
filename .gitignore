@@ -266,3 +266,5 @@ ModelManifest.xml
 /ErpNextPoc/TypeScripts/Configs/route.config.js.map
 /ErpNextPoc/TypeScripts/Components/approve.controller.js.map
 /ErpNextPoc/TypeScripts/Components/approve.controller.js
+/ErpNextPoc/TypeScripts/Controllers/MemberLogin/member.route.js
+/ErpNextPoc/TypeScripts/Controllers/MemberLogin/member.route.js.map

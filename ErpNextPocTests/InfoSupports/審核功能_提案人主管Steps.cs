@@ -1,9 +1,6 @@
-﻿
-using ErpNextPoc.Controllers.apis.InfoSupport;
-using ErpNextPoc.models.InfoSupport;
-using FluentTestCase;
+﻿using ErpNextPoc.Controllers.apis.InfoSupports;
+using ErpNextPoc.Models.InfoSupports;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using TechTalk.SpecFlow;
 
 namespace ErpNextPocTests.InfoSupports
@@ -21,13 +18,13 @@ namespace ErpNextPocTests.InfoSupports
         {
             this.InfoSupport = new InfoSupport(docno);
         }
-        
+
         [Given(@"服務單需求標題為 ""(.*)""")]
         public void Given服務單需求標題為(string title)
         {
             this.InfoSupport.Title = title;
         }
-        
+
         [Given(@"服務單需求說明為 ""(.*)""")]
         public void Given服務單需求說明為(string desc)
         {
@@ -45,7 +42,7 @@ namespace ErpNextPocTests.InfoSupports
         {
             this.InfoSupportController.ApproveToNextState(this.InfoSupport);
         }
-        
+
         [When(@"提案人主管不同意")]
         public void When提案人主管不同意()
         {
@@ -57,7 +54,6 @@ namespace ErpNextPocTests.InfoSupports
         {
             this.InfoSupport.State = state;
         }
-
 
         [Then(@"服務單的狀態為 ""(.*)"" 狀態")]
         public void Then服務單的狀態為狀態(InfoSupportEnum expected)

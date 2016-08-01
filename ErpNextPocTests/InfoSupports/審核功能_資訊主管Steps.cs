@@ -1,9 +1,6 @@
-﻿using ErpNextPoc.Controllers.apis.InfoSupport;
-using ErpNextPoc.models.InfoSupport;
-using ErpNextPoc.Models.InfoSupport.models.InfoSupport;
-using FluentTestCase;
+﻿using ErpNextPoc.Controllers.apis.InfoSupports;
+using ErpNextPoc.Models.InfoSupports;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using TechTalk.SpecFlow;
 
 namespace ErpNextPocTests
@@ -21,25 +18,25 @@ namespace ErpNextPocTests
         {
             this.InfoSupport = new InfoSupport(docno);
         }
-        
+
         [Given(@"服務單需求標題為 ""(.*)""")]
         public void Given服務單需求標題為(string title)
         {
             this.InfoSupport.Title = title;
         }
-        
+
         [Given(@"服務單需求說明為 ""(.*)""")]
         public void Given服務單需求說明為(string description)
         {
             this.InfoSupport.Description = description;
         }
-        
+
         [Given(@"服務單派工模組為 ""(.*)""")]
         public void Given服務單派工模組為(InfoModuleEnum assignedInfoModule)
         {
             this.InfoSupport.AssignedInfoModule = assignedInfoModule;
         }
-        
+
         [Given(@"服務單的狀態為 ""(.*)"" 狀態")]
         public void Given服務單的狀態為狀態(InfoSupportEnum state)
         {
@@ -57,13 +54,13 @@ namespace ErpNextPocTests
         {
             this.InfoSupportController.ApproveToNextState(this.InfoSupport);
         }
-        
+
         [When(@"資訊主管不同意")]
         public void When資訊主管不同意()
         {
             this.InfoSupportController.Reject(this.InfoSupport);
         }
-        
+
         [Then(@"服務單的狀態為 ""(.*)"" 狀態")]
         public void Then服務單的狀態為狀態(InfoSupportEnum expected)
         {

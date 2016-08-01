@@ -1,11 +1,6 @@
-﻿
-using ErpNextPoc.Controllers.apis.InfoSupport;
-using ErpNextPoc.models;
-using ErpNextPoc.models.InfoSupport;
-using ErpNextPoc.Models;
-using FluentTestCase;
+﻿using ErpNextPoc.Controllers.apis.InfoSupports;
+using ErpNextPoc.Models.InfoSupports;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using TechTalk.SpecFlow;
 
 namespace ErpNextPocTests.InfoSupports
@@ -17,7 +12,6 @@ namespace ErpNextPocTests.InfoSupports
         private InfoSupport InfoSupport { get; set; }
 
         private InfoSupportController InfoSupportController { get; set; }
-
 
         [Given(@"資料庫有服務單""(.*)""")]
         public void Given資料庫有服務單(string docno)
@@ -55,7 +49,6 @@ namespace ErpNextPocTests.InfoSupports
             this.InfoSupportController.Create(this.InfoSupport);
         }
 
-
         [When(@"事業部總經理同意")]
         public void When事業部總經理同意()
         {
@@ -68,6 +61,5 @@ namespace ErpNextPocTests.InfoSupports
             var actual = this.InfoSupport.State;
             Assert.AreEqual(expected, actual);
         }
-
     }
 }

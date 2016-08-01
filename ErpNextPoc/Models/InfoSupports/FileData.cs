@@ -2,7 +2,7 @@
 {
     public class FileData
     {
-        public string path { get;private set }
+        public string path { get; private set; }
 
         public FileData(string path)
         {
