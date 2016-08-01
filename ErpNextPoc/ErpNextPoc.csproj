@@ -237,6 +237,8 @@
     <Compile Include="Models\InfoSupports\InfoModuleEnum.cs" />
     <Compile Include="Models\InfoSupports\InfoSupport.cs" />
     <Compile Include="Models\InfoSupports\InfoSupportEnum.cs" />
+    <Compile Include="Repositories\InfoSupports\InfoSupportRepository.cs" />
+    <Compile Include="Repositories\InfoSupports\IInfoSupportRepository.cs" />
     <Compile Include="Services\InfoSupports\IInfoSupportService.cs" />
     <Compile Include="Services\InfoSupports\InfoSupportService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -321,7 +323,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Repositories\InfoSupports\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
