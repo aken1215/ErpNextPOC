@@ -431,7 +431,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void 查詢單據狀態()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢單據狀態", ((string[])(null)));
-#line 51
+#line 50
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
@@ -494,15 +494,15 @@ this.ScenarioSetup(scenarioInfo);
                         "3",
                         "true",
                         "3"});
-#line 52
+#line 51
  testRunner.Given("資料庫有服務單", ((string)(null)), table7, "Given ");
-#line 58
+#line 57
  testRunner.When("單據狀態條件勾選3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 59
+#line 58
  testRunner.And("簽核狀態條件勾選3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 60
+#line 59
  testRunner.And("未結案狀態條件選取3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 61
+#line 60
  testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
@@ -529,7 +529,7 @@ this.ScenarioSetup(scenarioInfo);
                         "3",
                         "true",
                         "3"});
-#line 62
+#line 61
  testRunner.Then("搜尋結果為", ((string)(null)), table8, "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -541,7 +541,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void 查詢自身簽核單據()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢自身簽核單據", ((string[])(null)));
-#line 66
+#line 65
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
@@ -604,11 +604,11 @@ this.ScenarioSetup(scenarioInfo);
                         "3",
                         "true",
                         "3"});
-#line 67
+#line 66
  testRunner.Given("資料庫有服務單", ((string)(null)), table9, "Given ");
-#line 73
+#line 72
  testRunner.When("簽核條件勾選\"true\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 74
+#line 73
  testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
@@ -635,7 +635,7 @@ this.ScenarioSetup(scenarioInfo);
                         "3",
                         "true",
                         "3"});
-#line 75
+#line 74
  testRunner.Then("搜尋結果為", ((string)(null)), table10, "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -647,7 +647,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void 查詢單據部門()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("查詢單據部門", ((string[])(null)));
-#line 79
+#line 78
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
@@ -710,11 +710,11 @@ this.ScenarioSetup(scenarioInfo);
                         "3",
                         "true",
                         "3"});
-#line 80
+#line 79
  testRunner.Given("資料庫有服務單", ((string)(null)), table11, "Given ");
-#line 86
+#line 85
  testRunner.When("申請部門條件選取\"VR11\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 87
+#line 86
  testRunner.And("呼叫查詢方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
@@ -753,7 +753,7 @@ this.ScenarioSetup(scenarioInfo);
                         "3",
                         "true",
                         "3"});
-#line 88
+#line 87
  testRunner.Then("搜尋結果為", ((string)(null)), table12, "Then ");
 #line hidden
             this.ScenarioCleanup();

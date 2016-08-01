@@ -78,11 +78,11 @@ this.ScenarioSetup(scenarioInfo);
 #line 7
  testRunner.Given("資料庫有服務單\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.And("服務單的狀態為 \"提案人驗收中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("服務單的狀態為 \"申請驗收\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
  testRunner.When("結案", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.Then("服務單的狀態為\"服務單已結案\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("服務單的狀態為\"結案\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -47,7 +47,6 @@ Scenario: 查詢單號區間(迄)起訖
 	| 2016070001 | 2016070099 | VR11 | 3     | 20160701     | 20160731   | 20160701            | 20160731          | 3             | true          | 3       |
 	| 2016070002 | 2016070099 | VR11 | 3     | 20160701     | 20160731   | 20160701            | 20160731          | 3             | true          | 3       |
 
-
 Scenario: 查詢單據狀態
 	Given 資料庫有服務單
 	| BeginDocno | EndDocno   | Dpt  | State | BeginDocdate | EndDocdate | BeginEST_cmplt_Date | EndEST_cmplt_Date | Approve_state | ApproveMyself | NoFinsh |

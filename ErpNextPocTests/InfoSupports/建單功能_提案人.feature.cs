@@ -90,7 +90,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.When("建立單據", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
- testRunner.Then("單據狀態為新增", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("單據狀態為建單中", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -260,7 +260,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 75
 this.ScenarioSetup(scenarioInfo);
 #line 76
-  testRunner.Given("資料庫有服務單\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("資料庫有服務單\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 77
  testRunner.And("服務單需求標題為 \"ERP系統改善\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 78
@@ -270,7 +270,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 80
  testRunner.And("服務單資訊主管說明為 \"依據需求開發\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 81
- testRunner.And("服務單的狀態為 \"提案人申請中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("服務單的狀態為 \"建單中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 82
  testRunner.When("修改服務項目\"ERP系統開發\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 83
@@ -292,7 +292,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 87
 this.ScenarioSetup(scenarioInfo);
 #line 88
- testRunner.Given("我有服務單單號\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("資料庫有服務單\"201607001\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 89
  testRunner.And("填寫需求標題\"電腦維修服務\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 90
@@ -302,7 +302,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 92
  testRunner.And("選擇服務項目\"電腦維修\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 93
- testRunner.And("服務單的狀態為 \"提案人申請中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("服務單的狀態為 \"建單中\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 94
  testRunner.When("我修改上傳檔案\"screen.jpg\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 95

@@ -33,7 +33,7 @@
             {
                 url: '/new',  
                 parent:'member',
-                templateUrl: 'TypeScripts/Controllers/MemberLogin/member.html',
+                templateUrl: 'TypeScripts/Controllers/MemberLogin/member.base.html',
                 controller: 'MemberController',
                 controllerAs: 'MemberCtrl',
                 resolve: {

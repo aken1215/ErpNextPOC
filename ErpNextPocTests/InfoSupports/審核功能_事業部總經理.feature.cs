@@ -86,8 +86,10 @@ this.ScenarioSetup(scenarioInfo);
 #line 11
  testRunner.And("服務單的狀態為 \"資訊長核准\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.When("事業部總經理同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("服務單存入資料庫中", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 13
+ testRunner.When("事業部總經理同意", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
  testRunner.Then("服務單的狀態為 \"事業部總經理核准\" 狀態", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

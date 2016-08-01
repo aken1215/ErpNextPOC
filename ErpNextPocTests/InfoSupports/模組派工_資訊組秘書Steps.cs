@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ErpNextPoc.Controllers.apis.InfoSupports;
+using ErpNextPoc.Models.InfoSupports;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
 
 namespace ErpNextPocTests.InfoSupports
@@ -7,34 +9,40 @@ namespace ErpNextPocTests.InfoSupports
     [Scope(Feature = "模組派工_資訊組秘書")]
     public class 模組派工_資訊組秘書Steps
     {
+        private InfoSupport InfoSupport { get; set; }
+
+        private InfoSupportController InfoSupportController { get; set; }
+
         [Given(@"資料庫有服務單""(.*)""")]
-        public void Given資料庫有服務單(int p0)
+        public void Given資料庫有服務單(string docno)
         {
-            ScenarioContext.Current.Pending();
+            this.InfoSupport = new InfoSupport(docno);
         }
-        
+
         [Given(@"服務單的狀態為 ""(.*)"" 狀態")]
-        public void Given服務單的狀態為狀態(string p0)
+        public void Given服務單的狀態為狀態(InfoSupportEnum state)
         {
-            ScenarioContext.Current.Pending();
+            this.InfoSupport.State = state;
         }
-        
+
         [When(@"選擇派工模組""(.*)""")]
-        public void When選擇派工模組(string p0)
+        public void When選擇派工模組(InfoModuleEnum assignedInfoModule)
         {
-            ScenarioContext.Current.Pending();
+            this.InfoSupport.AssignedInfoModule = assignedInfoModule;
         }
-        
+
         [When(@"派工")]
         public void When派工()
         {
-            ScenarioContext.Current.Pending();
+            this.InfoSupportController.ApproveToNextState(this.InfoSupport);
         }
-        
+
         [Then(@"服務單的狀態為""(.*)""")]
-        public void Then服務單的狀態為(string p0)
+        public void Then服務單的狀態為(InfoSupportEnum expected)
         {
-            ScenarioContext.Current.Pending();
+            var actual = this.InfoSupport.State;
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }
